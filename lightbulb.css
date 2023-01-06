@@ -7,7 +7,6 @@
   margin-top: -200px;
   margin-left: -200px;
   border-radius: 2px;
-
   overflow: hidden;
   background: transparent;
 }
@@ -15,37 +14,27 @@
 #bulb {
   position: absolute;
   z-index: 2;
-  top: 188px;
-  left: 162px;
-  fill: #FFF35C;
-  transition: all 0.5s ease-in-out;
+  top: 170px;
+  left: 147px;
   cursor: pointer;
 }
-#bulb:hover {
-  fill: #121212;
-}
+
 
 #glow {
   position: absolute;
   width: 76px;
   height: 76px;
-  background: #FFF35C;
   border-radius: 50px;
-  box-shadow: 0 0 50px 10px #FFF35C;
-  top: 188px;
-  left: 162px;
-  transition: all 0.5s ease-in-out;
-  z-index: 2;
+  top: 170px;
+  left: 147px;
+  
 }
 
-#bulb:hover ~ #glow {
-  opacity: 0;
-}
 
 #base {
   position: absolute;
-  top: 287px;
-  left: 184px;
+  top: 269px;
+  left: 169px;
   fill: #E5E5E5;
   z-index:2;
 }

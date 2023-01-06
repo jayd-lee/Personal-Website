@@ -50,3 +50,42 @@ let rotateText = () => {
 
 rotateText();
 setInterval(rotateText, 4000);
+
+// DARKMODE
+
+const light = document.getElementById('light-switch');
+let onOff = false;
+
+light.addEventListener('change', () => {
+  
+	document.getElementById("main__content").classList.toggle('light');
+  document.getElementById("navbar").classList.toggle('light');
+  document.getElementById("base").classList.toggle('light');
+  document.getElementById("darkmode").classList.toggle('light');
+  document.getElementById("bulb").classList.toggle('light');
+  document.getElementById("glow").classList.toggle('light');
+  document.getElementById("main").classList.toggle('light');
+  /*
+  if(onOff == false) {
+    document.getElementById("mainContentID").style.opacity = "0.1";
+    onOff = true;
+  }
+  else if(onOff) {
+    document.getElementById("mainContentID").style.opacity = "1";
+    onOff = false;
+  }
+  */
+  
+
+});
+
+//LIGHTSWITCH
+
+$(document).ready(function(){
+  setTimeout(function(){
+    $('#light-switch').trigger('click');
+  },500);
+  setTimeout(function(){
+    $('#light-switch').trigger('click');
+  },1000)
+});
