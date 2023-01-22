@@ -1,29 +1,29 @@
 @import 
 url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
 .endpage{
     background-color:rgb(223,189,150);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 100%;
-    height: 70vh;
-    padding: 0 2rem;
+    height: 85vh;
     position: relative;
     z-index: 5;
+    overflow: hidden;
+    text-align: center;
 }
 
 .endpage h1{
-  font-family: Helvetica;
-  margin: -40px
+  font-family: "Josefin Sans", sans-serif;
+  text-align:center;
+  font-weight: bold;
+  font-size: 80px;
+  color:#26180f
 }
 
 .thecoffee{
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
-
 .cup {
   width:76px;
   height:76px;
@@ -32,8 +32,8 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   position:absolute;
   left:50%;
   margin-left:-38px;
-  top:100px;
-  box-shadow:-4px -1px 0 rgba(0,0,0,0.2);
+  top:-30px;
+  box-shadow:-4px -1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cup:after{
@@ -95,11 +95,11 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
 .smoke {
   width:70px;
   height:100px; 
-  background:transparent;
+  background:;
   position:absolute;
   left:50%;
   margin-left:-40px;
-  top:43px;
+  top:-100px;
   background-image: -webkit-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), -webkit-radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), -webkit-radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%), -webkit-radial-gradient(55% 35%, ellipse, rgba(255,255,255,0.2), transparent 15%);
   background-image: -moz-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), -moz-radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), -moz-radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%), -moz-radial-gradient(55% 35%, ellipse, rgba(255,255,255,0.2), transparent 15%);
   background-image: radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%), radial-gradient(55% 35%, ellipse, rgba(255,255,255,0.2), transparent 15%);
@@ -110,7 +110,7 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   content:"";
   width:100px;
   height:100px; 
-  background:transparent;
+  background:;
   position:absolute;
   background-image: -webkit-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), -webkit-radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), -webkit-radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%);
   background-image: -moz-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), -moz-radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), -moz-radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%);
@@ -125,33 +125,14 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   100%{ background-position:-20px -25px, -5px -25px, 0px -25px, 0px -25px; opacity:0;}
 }
 
-.txt{
-  position:absolute;
-  top:500px;
-  width:150px;
-  left:50%;
-  margin-left:-75px;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.txt a{
-  text-decoration:none;
-  color:#613317;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.txt a:hover {
-  text-decoration:underline;
-}
 
 .contact-links {
   display: flex;
   justify-content: center;
+  text-align: center;
   width: 100%;
-  max-width: 980px;
-  margin-top: 4rem;
+  margin-top: 9rem;
   flex-wrap: wrap;
-
 }
 
 .contact-details {
@@ -160,10 +141,251 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   transition: transform 0.3s ease-out;
   text-decoration: none;
   color:#613317;
-  font-weight: bold;
+  font-weight: 400;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .contact-details:hover {
   transform: translateY(-5px);
+}
+
+.bread {
+  background: #BBA;
+  transform: scale(.6);
+  position: absolute;
+  bottom:25%;
+  left:63%;
+  z-index: -1;
+
+}
+.bread :before, .bread :after {
+  content: '';
+  display: block;
+}
+
+.dish {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background: #EFEFEF;
+  border-radius: 50%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+.dish:before {
+  border-radius: 50%;
+  box-shadow: inset 0 5px 3px rgba(0, 0, 0, 0.1), inset 0 -2px 1px rgba(255, 255, 255, 0.6);
+  position: relative;
+  margin: 15% auto;
+  width: 70%;
+  height: 70%;
+  background: #EEE;
+}
+
+
+#toast {
+  background: wheat;
+  position: relative;
+  margin: 0 auto;
+  width: 30vw;
+  height: 27vw;
+  border-radius: 10%;
+  box-shadow: inset 0 -0.4vw 0 0.5vw burlywood, 2vw 2vw 59px -24px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border: solid .2vw peru;
+  z-index: 1;
+  position: absolute;
+    top: -30px;
+    left: -70px;
+  transform: scale(0.4) rotate(15deg);
+}
+
+#toast:before {
+  background: wheat;
+  box-shadow: inset 0 0.55vw 0 0.4vw burlywood, inset 0 0.7vw 0.1vh 0.5vw peru;
+  top: -22%;
+  left: -5%;
+  width: 110%;
+  height: 11vw;
+  border-radius: 5vw;
+  z-index: 3;
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+}
+
+/* butter and crumbs! */
+#toast:after {
+  background: lemonchiffon;
+  content: '';
+  position: absolute;
+  transform: rotate(-25deg);
+  z-index: 9999;
+  border-radius: .4vw;
+  top: 30%;
+  left: 37%;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 1vw;
+  box-shadow: 0.2vw -0.4vw 0 0.1vw lightyellow, -0.2vw 0.6vw 2vw 0.5vw rgba(255, 215, 0, 0.6), 0 -1.5vw 6vw 7vw rgba(210, 105, 30, 0.3), 0 -1.5vw 6vw 2vw rgba(210, 105, 30, 0.2), 6vw 6vw 1px -3.3vw burlywood, -3vw -6vw 1px -3.3vw burlywood, -6vw 5vw 1px -3.3vw burlywood, -6vw 0 1px -3.3vw burlywood, 5vw -6vw 1px -3.3vw burlywood, -2vw -7vw 1px -3.3vw white, 2vw 6vw 1px -3.3vw white, 6vw -2vw 1px -3.3vw white;
+}
+
+.milk{
+  position: absolute;
+  bottom:-15%;
+  left:42%;
+  transform: scale(1.25);
+}
+.mshad1{
+  background-color: rgba(0, 61, 77,0.2);
+  height:43px;
+  width: 43px;
+  border-radius: 50%;
+  position: relative;
+  left:245px;
+  bottom:130px;
+  transform: scale(1.2) rotate(-30deg);
+
+}
+.mshad2{
+  background-color:rgba(0, 61, 77,0.2);
+  height:25px;
+  width: 25px;
+  transform: rotate(38deg);
+  position: relative;
+  border-radius: 5px;
+  top:10px;
+  right: 3px;
+}
+.mshad3{
+  background-color: rgba(0, 61, 77,0.2);
+  width:21px;
+  height:14px;
+  position: relative;
+  border-bottom-right-radius:21px;
+  border-top-right-radius: 21px;
+  left:40px;
+  bottom:9px;
+
+}
+.mcup1{
+  background-color: white;
+  height:43px;
+  width: 43px;
+  border-radius: 50%;
+  position: relative;
+  bottom:43px;
+  right:3px;
+}
+.mcup2{
+  background-color:white;
+  height:25px;
+  width: 25px;
+  transform: rotate(38deg);
+  position: relative;
+  border-radius: 5px;
+  top:10px;
+  right: 4px;
+}
+.mcup3{
+  background-color: white;
+  width:21px;
+  height:14px;
+  position: relative;
+  border-bottom-right-radius:21px;
+  border-top-right-radius: 21px;
+  left:40px;
+  bottom:9px;
+}
+.minn1{
+  background-color: #e5dacd;
+  height:38px;
+  width: 38px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 36px;
+  left:1.5px;    
+}
+.minn2{
+  background-color: #e5dacd;
+  height:20px;
+  width: 20px;
+  transform: rotate(38deg);
+  position: relative;
+  border-radius: 5px;
+  top:10px;
+  right: 4px;
+}
+.milk1{
+  background-color: white;
+  height:30px;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 16px;
+  left:4px;
+}
+.milk2{
+  background-color: white;
+  height:12px;
+  width: 12px;
+  transform: rotate(38deg);
+  position: relative;
+  border-radius: 3px;
+  top:10px;
+  right: 4px;
+}
+
+.code {
+  width: 100%;
+  background: transparent;
+  overflow: hidden;
+  position: absolute;
+  height: 350px;
+  bottom:0;
+}
+.svg {
+  position: absolute;
+  bottom: -10px;
+  width: 700px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#macbook {
+  animation: macbook 0.7s linear;
+  transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#coder {
+  animation: coder 0.8s linear;
+  transform-origin: center center;
+}
+@keyframes macbook {
+  0% {
+    transform: translateY(300px);
+ }
+  50% {
+    transform: translateY(10px);
+ }
+  100% {
+    transform: translateY(0px);
+ }
+}
+@keyframes coder {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+ }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+ }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+ }
 }

@@ -150,7 +150,7 @@ var dumperTimeline = () => {
   
   tl.add(gsap.to(Dumper, {
     duration: 2.5,
-    x: -350,
+    x: -250,
     ease: "power1.out"
   }), "enterE1+=0.5")
   
@@ -177,7 +177,7 @@ var dumperTimeline = () => {
   
   tl.add(gsap.to(Dumper, {
     duration: 2.5,
-    x: -50,
+    x: 50,
     ease: "power1.inOut"
   }), "placeE1+=0.5")
   
@@ -187,7 +187,7 @@ var dumperTimeline = () => {
   
   tl.add(gsap.to(Dumper, {
     duration: 3.5,
-    x: -400,
+    x: -200,
     ease: "power1.inOut"
   }), "enterM+=0.5")
   
@@ -201,7 +201,7 @@ var dumperTimeline = () => {
   // Move to roll in e
   tl.add(gsap.to(Dumper, {
     duration: 2.5,
-    x: -250,
+    x: 50,
     ease: "power1.inOut"
   }), "enterM+=3.5")
   
@@ -222,7 +222,7 @@ var dumperTimeline = () => {
   
   tl.add(gsap.to(Dumper, {
     duration: 3.75, // Manually sync
-    x: -50,
+    x: -150,
     ease: "power2.inOut"
   }), "enterE2")
   
@@ -249,120 +249,14 @@ var helicopterTimeline = () => {
   let destX = destinations.w.getBBox().x
   let destY = destinations.w.getBBox().y
   
-  tl.add(gsap.to(Helicopter, {
-    motionPath: {
-      path: [{
-        x: -(Helicopter.getBBox().x - (destX + 120)),
-        y: -(Helicopter.getBBox().y - (destY - 220))
-      }, {
-        x: -(Helicopter.getBBox().x - (destX - 7)),
-        y: -(Helicopter.getBBox().y - (destY - 76))
-      }]
-    },
-    duration: 5,
-    ease: "power1.inOut"
-  }), "lowerW")
-  
-  tl.add(gsap.to(w, {
-    motionPath: {
-      path: [{
-        x: -(Helicopter.getBBox().x - (destX + 120)),
-        y: -(Helicopter.getBBox().y - (destY - 220))
-      }, {
-        x: -(w.getBBox().x - destX),
-        y: -(w.getBBox().y - destY)
-      }]
-    },
-    duration: 5,
-    ease: "power1.inOut"
-  }), "lowerW")
-  
-  tl.add(gsap.to(Helicopter, {
-    delay: 1,
-    motionPath: {
-      path: [{
-        x: -(Helicopter.getBBox().x - (destX + 40)),
-        y: -(Helicopter.getBBox().y - (destY - 220))
-      }, {
-        x: 0,
-        y: 0
-      }]
-    },
-    duration: 4,
-    ease: "power1.in"
-  }))
-  
-  const oHeliOffsetX = 22
-  const oHeliOffsetY = 78
-  
-  tl.add(gsap.to(Helicopter, {
-    motionPath: {
-      path: [{
-        x: 0,
-        y: 0
-      }, {
-        x: -(Helicopter.getBBox().x - (letters.o.getBBox().x - oHeliOffsetX)),
-        y: -(Helicopter.getBBox().y - (letters.o.getBBox().y - oHeliOffsetY))
-      }]
-    },
-    duration: 3,
-    ease: "power1.out"
-  }))
-  
-  destX = destinations.o.getBBox().x - 6 // Manually fix position
-  destY = destinations.o.getBBox().y - 150
-  
-  tl.addLabel("moveO")
-  
-  tl.add(gsap.to(o, {
-    motionPath: {
-      path: [{
-        x: -(o.getBBox().x - (destX + 120)),
-        y: -(o.getBBox().y - destY)
-      }, {
-        x: -(o.getBBox().x - destX),
-        y: -(o.getBBox().y - destY)
-      }]
-    },
-    duration: 5,
-    ease: "power1.inOut"
-  }), "moveO")
-  
-  tl.add(gsap.to(Helicopter, {
-    motionPath: {
-      path: [{
-        x: -(Helicopter.getBBox().x - (destX + 120 - oHeliOffsetX + 4)),
-        y: -(Helicopter.getBBox().y - (destY - oHeliOffsetY))
-      }, {
-        x: -(Helicopter.getBBox().x - (destX - oHeliOffsetX + 4)),
-        y: -(Helicopter.getBBox().y - (destY - oHeliOffsetY))
-      }]
-    },
-    duration: 5,
-    ease: "power1.inOut"
-  }), "moveO")
-  
-  tl.addLabel("dropO")
-  
-  tl.add(gsap.to(o, {
-    x: -(o.getBBox().x - destX),
-    y: -(o.getBBox().y - (destinations.o.getBBox().y - 2)),
-    duration: 1,
-    ease: "bounce.out"
-  }), "dropO+=0.25")
   
   // Pause and just hover around
   
   tl.addLabel("heliHover")
   
+
   tl.add(gsap.to(Helicopter, {
-    rotation: -10,
-    duration: 0.5,
-    ease: "power1.inOut"
-  }), "heliHover")
-  
-  tl.add(gsap.to(Helicopter, {
-    x: "-=180",
+    x: "+=20000",
     y: "-=40",
     duration: 2,
     ease: "power1.inOut"
@@ -375,31 +269,7 @@ var helicopterTimeline = () => {
   }), "heliHover+=1.2")
   
   // Move back, still just hovering
-  tl.add(gsap.to(Helicopter, {
-    rotation: 10,
-    duration: 0.5,
-    ease: "power1.inOut"
-  }), "heliHover+=3")
-  
-  tl.add(gsap.to(Helicopter, {
-    x: "+=180",
-    y: "-=30",
-    duration: 2,
-    ease: "power1.inOut"
-  }), "heliHover+=3.2")
-  
-  tl.add(gsap.to(Helicopter, {
-    rotation: 0,
-    duration: 0.5,
-    ease: "power1.inOut"
-  }), "heliHover+=4.2")
-  
-  tl.add(gsap.to(Helicopter, {
-    y: "-=100",
-    opacity: "0",
-    duration: 2,
-    ease: "power1.inOut"
-  }), "heliHover+=6")
+
   
   return tl
 }

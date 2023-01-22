@@ -65,13 +65,18 @@ let onOff = false;
 light.addEventListener('change', () => {
   
 	document.getElementById("main__content").classList.toggle('light');
-  document.getElementById("navbar").classList.toggle('light');
   document.getElementById("base").classList.toggle('light');
-  document.getElementById("darkmode").classList.toggle('light');
   document.getElementById("bulb").classList.toggle('light');
   document.getElementById("glow").classList.toggle('light');
+  document.getElementById("darkmode").classList.toggle('light');
+  document.getElementById("flash").classList.toggle('light');
   document.getElementById("main").classList.toggle('light');
-  document.getElementById("guitar").classList.toggle('light');
+  document.getElementById("hero-wrapper").classList.toggle('light');
+  document.getElementById("notmain").classList.toggle('light');
+  document.getElementById("navbar").classList.toggle('light');
+  document.getElementById("social-icons").classList.toggle('light');
+  
+
   /*
   if(onOff == false) {
     document.getElementById("mainContentID").style.opacity = "0.1";

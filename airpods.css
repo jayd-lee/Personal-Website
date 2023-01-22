@@ -1,0 +1,483 @@
+
+.pods-bg {
+    --black-outline: hsl(232, 11%, 43%);
+    --pod-case-color: hsl(333, 3%, 90%);
+    --pod-case-shine: hsl(333, 3%, 100%);
+    --pillar-bottom-shine: hsl(333, 3%, 95%);
+    height: 10%;
+    width: 10%;
+    background-color: transparent;
+    position:absolute;
+    bottom:25%;
+    left:26%;
+    transform: rotate(20deg);
+  }
+  .air-middle {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 0px;
+  }
+  .pods-container {
+    height: 400px;
+    width: 400px;
+    top: 50px;
+    transform: scale(0.3);
+  }
+  /* ============================
+  POD CASE 
+  ============================ */
+  .pod-case {
+    height: 160px;
+    width: 175px;
+    border-top: 2px solid var(--black-outline);
+    border-radius: 0px 0px 50px 50px;
+    background-color: var(--pod-case-color);
+    transition: all .15s;
+  }
+  .pod-case::before {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    border-radius: 0px 0px 50px 50px;
+    border-right: 10px solid var(--pod-case-shine);
+    height: 130px;
+    width: 135px;
+    background-color: transparent;
+  }
+  .pod-case::after {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    content: '';
+    border-top: 1px solid var(--black-outline);
+    border-radius: 0px 0px 25px 25px;
+    height: 10px;
+    width: 90px;
+    background-color: var(--pod-case-shine);
+  }
+  /* ======================
+  PODS TOP BACK
+  ====================== */
+  .pod-top-back {
+    top: -220px;
+    top: -170px;
+    right: 0px;
+    height: 60px;
+    width: 175px;
+    background-color: var(--pod-case-shine);
+    border-radius: 50px;
+    transition: all .15s;
+  }
+  /* ===== pods left ear ===== */
+  .pod-left-ear {
+    height: 60px;
+    width: 50px;
+    top: 10px;
+    right: 55px;;
+    border-radius: 50%;
+    background-color: var(--pod-case-color);
+  }
+  .pod-left-ear::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 30px;
+    width: 25px;
+    top: 15px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: var(--pod-case-color);
+  }
+  .pod-left-ear-tb {
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    width: 40px;
+    border-radius: 0px 5px 0px 0px;
+    background-color: var(--pod-case-color);
+    transform: rotate(-23deg);
+    top: 7px;
+    right: 24px;
+  }
+  .pod-left-ear-tb::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 25px;
+    width: 40px;
+    border-radius: 0px 0px 5px 0px;
+    background-color: var(--pod-case-color);
+    transform: rotate(50deg);
+    top: 20px;
+    right: 10px;
+  }
+  /* ===== pods right ear ===== */
+  .pod-right-ear {
+    height: 60px;
+    width: 50px;
+    top: 10px;
+    right: -55px;;
+    border-radius: 50%;
+    background-color: var(--pod-case-color);
+  }
+  .pod-right-ear::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 30px;
+    width: 25px;
+    top: 15px;
+    right: -25px;
+    border-radius: 50%;
+    background-color: var(--pod-case-color);
+  }
+  .pod-right-ear-tb {
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    width: 40px;
+    border-radius: 5px 0px 0px 0px;
+    background-color: var(--pod-case-color);
+    transform: rotate(23deg);
+    top: 7px;
+    right: -14px;
+  }
+  .pod-right-ear-tb::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 25px;
+    width: 40px;
+    border-radius: 0px 0px 5px 0px;
+    background-color: var(--pod-case-color);
+    transform: rotate(-50deg);
+    top: 20px;
+    right: -10px;
+  }
+  .pods-container:hover .pod-top-back {
+    top: -220px;
+    width: 165px;
+  }
+  /* ===================
+  POD CASE TOP
+  ==================== */
+  .pod-top {
+    top: -220px;
+    right: 0px;
+    height: 60px;
+    width: 175px;
+    background-color: var(--pod-case-color);
+    border-radius: 50px 50px 0px 0px;
+    transition: all .1s;
+  }
+  .pods-container:hover .pod-top {
+    top: -277px;
+    right: 0px;
+    height: 0px;
+    width: 120px;
+  }
+  .pods-container:active .pod-top-back, .pods-container:active .pod-top, .pods-container:active .pod-case {
+    bottom: -100px;
+  }
+  .pods-container:active .pod-top {
+      top: -277px;
+    right: 0px;
+    height: 0px;
+    width: 120px;
+  }
+  /* =====================
+  AIR-PODS PODS
+  ====================== */
+  .air-pods-1 {
+    top: -77px;
+    right: 0px;
+    bottom: 0px;
+    left: -110px;
+    height: 150px;
+    width: 80px;
+    transition: all 1s;
+  }
+  .air-pods-2 {
+    top: -77px;
+    right: 0px;
+    bottom: 0px;
+    left: 10px;
+    height: 150px;
+    width: 80px;
+    transition: all 1s;
+  }
+  .air-movement-left {
+    transition: all .2s;
+  }
+  .air-movement-right {
+    transition: all .2s;
+  }
+  .air-movement-counter-clockwise {
+  
+  }
+  .air-movement-clockwise {
+  
+  }
+  .pods-container:active .air-pods-1 {
+    top: -350px;
+    transition: .7s;
+    transition-delay: .15s;
+  }
+  .pods-container:active .air-pods-2 {
+    top: -350px;
+    transition: .7s;
+    transition-delay: .25s;
+  }
+  .pods-container:active .air-movement-left {
+    left: -85px;
+    transition: all 1.1s;
+    transition-delay: .7s;
+  }
+  .pods-container:active .air-movement-counter-clockwise {
+    transform-origin: top left;
+    transform: rotate(720deg);
+    transition: all .5s;
+    transition-delay: 1.3s;
+  }
+  .pods-container:active .air-movement-right {
+    left: 85px;
+    transition-delay: 0s;
+    transition: all 1.2s;
+    transition-delay: .7s;
+  }
+  .pods-container:active .air-movement-clockwise {
+    transform-origin: top right;
+    transform: rotate(-720deg);
+    transition: all .5s;
+    transition-delay: 1.3s;
+  }
+  /* ===== air pods top left ===== */
+  .pod-left-top {
+    height: 60px;
+    width: 50px;
+    top: -85px;
+    right: -25px;;
+    border-radius: 50%;
+    background-color: var(--pod-case-shine);
+  }
+  .pod-left-top::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 30px;
+    width: 25px;
+    top: 15px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: var(--pod-case-shine);
+  }
+  .pod-left-top-body {
+    height: 20px;
+    width: 40px;
+    border-radius: 0px 5px 0px 0px;
+    background-color: var(--pod-case-shine);
+    transform: rotate(-23deg);
+    top: -27px;
+    left: -36px;
+  }
+  .pod-left-top-body::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 23px;
+    width: 40px;
+    border-radius: 0px 4px 5px 0px;
+    background-color: var(--pod-case-shine);
+    transform: rotate(46deg);
+    top: 22px;
+    right: 10px;
+  }
+  /* ===== air pods top bits left ===== */
+  .pod-top-bits-left {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--black-outline);
+    top: -85px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .pod-top-bits-left::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 10px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: var(--black-outline);
+    top: 0px;
+    right: -25px;
+  }
+  /* ===== pod hearing left ===== */
+  .pod-hearing-left {
+    height: 20px;
+    width: 10px;
+    background-color: var(--black-outline);
+    border-top: solid 2px var(--pod-case-color);
+    border-left: solid 1px var(--pod-case-color);
+    border-bottom: solid 2px var(--pod-case-color);
+    border-radius: 50%;
+    top: -85px;
+    left: -35px;
+  }
+  /* ===== air pods top right ===== */
+  .pod-right-top {
+    height: 60px;
+    width: 50px;
+    top: -85px;
+    right: 25px;;
+    border-radius: 50%;
+    background-color: var(--pod-case-shine);
+  }
+  .pod-right-top::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 30px;
+    width: 25px;
+    top: 15px;
+    right: -25px;
+    border-radius: 50%;
+    background-color: var(--pod-case-shine);
+  }
+  .pod-right-top-body {
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    width: 40px;
+    border-radius: 5px 0px 0px 0px;
+    background-color: var(--pod-case-shine);
+    transform: rotate(23deg);
+    top: -27px;
+    left: 23px;
+  }
+  .pod-right-top-body::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 23px;
+    width: 40px;
+    border-radius: 0px 0px 5px 4px;
+    background-color: var(--pod-case-shine);
+    transform: rotate(-46deg);
+    top: 20px;
+    right: -12px;
+  }
+  /* ===== air pods top bits right ===== */
+  .pod-top-bits-right {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--black-outline);
+    top: -85px;
+    right: -85px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .pod-top-bits-right::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 10px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: var(--black-outline);
+    top: 0px;
+    right: 15px;
+  }
+  /* ===== pod hearing right ===== */
+  .pod-hearing-right {
+    height: 20px;
+    width: 10px;
+    background-color: var(--black-outline);
+    border-top: solid 2px var(--pod-case-color);
+    border-right: solid 1px var(--pod-case-color);
+    border-bottom: solid 2px var(--pod-case-color);
+    border-radius: 50%;
+    top: -85px;
+    right: -135px;
+  }
+  /* ===== air pods left pillar ===== */
+  .pod-left-top-pillar {
+    height: 100px;
+    width: 25px;
+    border-radius: 10px;
+    background-color: var(--pod-case-shine);
+    top: 30px;
+    right: -50px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .pod-left-top-pillar::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 15px;
+    width: 25px;
+    background-color: var(--pod-case-color);
+    border-radius: 0px 0px 5px 30px;
+    top: -55px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .pillar-bottom-left {
+    height: 10px;
+    width: 25px;
+    background-color: var(--pillar-bottom-shine);
+    border-radius: 0px 0px 10px 10px;
+    top: 120px;
+    right: -20px;
+    bottom: 0px;
+    left: 12.5px;
+  }
+  /* ===== air pods right pillar ===== */
+  .pod-right-top-pillar {
+    height: 100px;
+    width: 25px;
+    border-radius: 10px;
+    background-color: var(--pod-case-shine);
+    top: 30px;
+    right: -50px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .pod-right-top-pillar::before {
+    position: absolute;
+    margin: auto;
+    content: '';
+    height: 15px;
+    width: 25px;
+    background-color: var(--pod-case-color);
+    border-radius: 0px 0px 30px 5px;
+    top: -55px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .pillar-bottom-right {
+    height: 10px;
+    width: 25px;
+    background-color: var(--pillar-bottom-shine);
+    border-radius: 0px 0px 10px 10px;
+    top: 120px;
+    right: 20px;
+    bottom: 0px;
+    left: 12.5px;
+  }

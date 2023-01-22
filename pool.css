@@ -1,0 +1,10 @@
+.pool{
+    width: 20vw;
+    height: 20vw;
+    display: table;
+    position: absolute;
+    margin-bottom: 5vh;
+    bottom: 0;
+    right:15vh;
+  }
+  

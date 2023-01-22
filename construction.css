@@ -1,8 +1,13 @@
+#helicopter{
+  display: none;
+}
+
 
 
 .builders > svg{
+  height:100vh;
   position: absolute;
-  width: 70%;
+  width: 80%;
   bottom:0%;
   right: 0%;
 }

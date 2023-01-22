@@ -1,0 +1,366 @@
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fae8e0;
+  font-weight: 900;
+  font-size: 15vw;
+}
+
+.tilt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: tilting 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+
+.tilt span {
+  transition: font-weight 0.4s ease-in;
+  animation: floating-secondary 2.5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+.tilt span:nth-child(1) {
+  animation-delay: 1s;
+}
+.tilt span:nth-child(2) {
+  animation-delay: 2s;
+}
+.tilt span:nth-child(3) {
+  animation-delay: 3s;
+}
+.tilt span:nth-child(4) {
+  animation-delay: 4s;
+}
+.tilt span:nth-child(5) {
+  animation-delay: 5s;
+}
+.tilt span:nth-child(6) {
+  animation-delay: 6s;
+}
+.tilt span:nth-child(7) {
+  animation-delay: 7s;
+}
+
+#tilt1:hover {
+    text-shadow: 0px 0px 60px white;
+}
+
+#tilt2:hover {
+    text-shadow: 0px 0px 60px white;
+}
+
+#tilt3:hover {
+    text-shadow: 0px 0px 60px white;
+}
+
+#tilt4:hover {
+    text-shadow: 0px 0px 60px white;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 0.5vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes floating-secondary {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 0.25vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes tilting {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+
+#open {
+    position:absolute;
+    z-index: 300;
+    top:0;
+    color:transparent;
+}
+
+#open2{
+    position: absolute;
+    z-index: 20;
+    top:70%;
+    left:10.5%;
+    color: rgb(63, 217, 191);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    animation: floating 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+
+#open3{
+    position: absolute;
+    z-index: 20;
+    top:60%;
+    left:39%;
+    color: rgb(170, 170, 170);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', sans-serif;
+    animation: floating 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+
+#open4{
+    position: absolute;
+    z-index: 20;
+    top:50.5%;
+    right:33%;
+    color: #f392a0;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', sans-serif;
+    animation: floating 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+
+#open5{
+    position: absolute;
+    z-index: 20;
+    top:56%;
+    right:10.8%;
+    color: rgb(246, 197, 74);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', sans-serif;
+    animation: floating 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+
+#close2{
+    position: absolute;
+    z-index: 5;
+    bottom: 3%;
+    left: 3%;
+}
+
+#close3{
+    position: absolute;
+    z-index: 5;
+    bottom: 3%;
+    left: 3%;
+}
+
+#close4{
+    position: absolute;
+    z-index: 5;
+    bottom: 3%;
+    left: 3%;
+}
+
+#close5{
+    position: absolute;
+    z-index: 5;
+    bottom: 3%;
+    left: 3%;
+    
+}
+
+.readme-container {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+  z-index: 300;
+}
+
+.readme-container.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.readme {
+	background-color: #fff;
+	width: 100%;
+  height:100vh;
+
+/* 	transform: translateY(-200%); */
+/* 	transition: transform 0.3s ease; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.readmewrapper p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  font-family:'Roboto' sans-serif;
+}
+
+.readmewrapper {
+  position: relative;
+  height: 100vh;
+  background-color: #131417;
+}
+
+
+.readmewrapper > img{
+  position:absolute;
+  width:30%;
+  top:8%;
+  right:12%;
+}
+
+.desc_intro{
+  padding:50px;
+  font-size: 60px !important;
+}
+
+.desc_intro > span{
+  color: #f1c40f;
+}
+
+#desc_next{
+  padding-left: 50px;
+  padding-right: 50px;
+  width:60%;
+  float:left;
+}
+
+#desc_next span:nth-child(1){
+  color: #f1930f;
+}
+
+#desc_next span:nth-child(2){
+  color: #dc5445;
+}
+
+#desc_last span:nth-child(1){
+  color: #2ecc71;
+}
+
+#desc_last span:nth-child(2){
+  color: #3498db;
+}
+
+
+
+#desc_2nd{
+}
+
+.desc_last{
+  position:absolute;
+  bottom:80px; 
+  left:0;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size:1.75rem;
+  width:60%;
+  float:left;
+}
+
+
+.school-container {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+    z-index: 300;
+}
+
+.school-container.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.school {
+	background-color: #fff;
+	width: 100%;
+    height:100vh;
+    position: relative;
+/* 	transform: translateY(-200%); */
+/* 	transition: transform 0.3s ease; */
+}
+
+
+.work-container {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+    z-index: 300;
+}
+
+.work-container.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.work {
+	background-color: #fff;
+	width: 100%;
+    height:100vh;
+}
+
+
+.skills-container {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+    z-index: 300;
+}
+
+.skills-container.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.skills {
+	background-color: #fff;
+	width: 100%;
+    height:100vh;
+}
+
+
+
+button{
+  background: #3498db;
+  width: 180px;
+  padding: 4px 0;
+}
