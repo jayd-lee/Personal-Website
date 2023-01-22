@@ -1,3 +1,9 @@
+//Loader
+
+
+
+
+//NAVBAR
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
@@ -65,6 +71,7 @@ light.addEventListener('change', () => {
   document.getElementById("bulb").classList.toggle('light');
   document.getElementById("glow").classList.toggle('light');
   document.getElementById("main").classList.toggle('light');
+  document.getElementById("guitar").classList.toggle('light');
   /*
   if(onOff == false) {
     document.getElementById("mainContentID").style.opacity = "0.1";

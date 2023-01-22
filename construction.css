@@ -1,0 +1,45 @@
+
+
+.builders > svg{
+  position: absolute;
+  width: 70%;
+  bottom:0%;
+  right: 0%;
+}
+
+#final_A, #final_w, #final_e1, #final_s, #final_o, #final_m, #final_e2 {
+  opacity: 0;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+#Blades {
+  perspective: 500px;
+  transform-origin: 706px 0;
+  transform-style: preserve-3d;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}

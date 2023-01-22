@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset= "UTF-8">
+    <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
+    <meta name= "viewport" content= "width-device-width, initial-scale=1.0">
     <title>Jayden Lee</title>
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -16,9 +17,46 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="switch.css">
     <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="guitar.css">
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="construction.css">
+    <link rel="stylesheet" href="truck.css">
 
   </head>
   <body>
+    
+    <div id="loader">
+      <img src="lightbulb.gif">
+    </div>
+  
+    <script type="text/javascript">
+        
+        var loader;
+        function loadNow(opacity) {
+            if(opacity <= 0) {
+                displayContent();
+            }
+            else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function() {
+                    loadNow(opacity - 0.05)
+                }, 100);
+            }
+        }
+        
+        function displayContent() {
+            loader.style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            loader = document.getElementById('loader');
+            loadNow(1);
+        });
+        
+    </script>
+
+
     <nav class="navbar" id="navbar">
       <div class="navbar__container">
       
@@ -87,89 +125,342 @@
           </svg>
         </div>
       </div>
-    </div>
-    
+      
+      <!--GUITAR-->
 
-    <!-- About Section -->
-    <div class="about" id="about">
-      <div class="about__container">
-        <h1>About me.</h1>
-        <p>I am a student of Purdue University studying Data Science, planning to double major in CS.</p>
-        <div class="about__grid">
-          <div class="mepicture">
-            <img src="./images/Macbook.png" alt="picture of me" class="macbook" />
-          </div>
-          <div class="about__resource">
-            <p>I have acquired my programming skills from:</p>
-            <div class="about__content">
-              <img src="exam.png" alt="school" />
-              <div class="about__desc">
-                <h2 id="school">School</h2>
-                  <ul>
-                    <li>West Valley College - Introduction to Python (CIST 5A)</li>
-                    <li>De Anza College - Beginnning Programming Methodologies C++ (CIS 22A)</li>
-                    <li>Purdue University - Problem Solving And Object-Oriented Programming (CS 180)</li>
-                    <li>The Data Mine Corporate Partners (collaborated with CDC)</li>
-                  </ul>
-              </div>
-            </div>
-            <div class="about__content">
-              <img src="application-window.png" alt="web" />
-              <div class="about__desc">
-                <h2 id="online">Online Resources</h2>
-                  <ul>
-                    <li>Introduction to Programming with Python (Harvard CS50P)</li>
-                    <li>Responsive Web Design (FreeCodeCamp)</li>
-                    <li>Deep Dive Into Modern Web Development (FullStackOpen)</li>
-                    <li>Intro to Data Structures and Algorithms (Grow with Google)</li>
-                  </ul>
-              </div>
-            </div>
-            <div class="about__content">
-              <img src="youtube-play.png" alt="youtube" />
-              <div class="about__desc">
-                <h2 id="youtube">Youtube</h2>
-                <p>
-                  The video creators that I often go to are Corey Schafer, Keith Galli, Alvin the Programmer, and many more!
-                </p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      <div class="yellow__bar">
-        <img src="" alt="" />
-        <p></p>
-        <span></span>
-      </div>
-    </div>
-    
-
-
-    <div class="projects" id="projects">
-      <h1>Personal Projects</h1>
-      <div class="projects__container">
-        <div class="projects__card">
-          <h2>Customer Segmentation</h2>
-          <p>Pandas Numpy Matplotlib Seaborn</p>
-          <button>See Details</button>
-        </div>
-        <div class="projects__card">
-          <h2>Stock Data Candlestick Dashboard</h2>
-          <p>Selenium Matplotlib</p>
-          <button>See Details</button>
+      <svg class="guitarSVG" viewBox="0 0 1256 3200" id="guitar">
+        <filter id="f2" x="-100%" y="-100%" width="300%" height="300%">
+            <feOffset result="offOut" in="SourceAlpha" dx="0" dy="-33" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+          </filter>
+        <g class="guitarBody">
+          <path d="M 626 1600 C 1135 1600 1116 1738 1055 2176 C 1035 2323 1721 3176 622 3194 C -465 3176 221 2323 201 2176 C 140 1738 121 1600 630 1600 Z" fill="rgb(47,20,20)" transform="translate(0 -50)"/>
+          <path d="M 626 1600 C 1135 1600 1116 1738 1055 2176 C 1035 2323 1721 3176 622 3194 C -465 3176 221 2323 201 2176 C 140 1738 121 1600 630 1600 Z" fill="orange"/>
+          <circle cx="628" cy="2072" r="156" fill="#222" />
+          <circle cx="628" cy="2072" r="162" fill="none" stroke="#666" stroke-width="5" />
+          <path d="M 390 2490 H 862 V 2570 H 798 Q 626 2635 454 2570 H 390 Z" />
+          <path d="M484 2527 L 772 2513" stroke-width="10" stroke="tan" stroke-linecap="round" />
+        </g>
         
+        <g class="guitarNeck">
+          <path d="M 530 1910 H 722 V 462 H 530 V 1910" fill="rgb(77,72,79)" />
+          <path d="M 462 345 L 562 325 M 462 231 L 562 211 M 462 112 L 562 92 M 790 345 L 690 325 M 790 231 L 690 211 M 790 112 L 690 92" stroke="rgb(100,100,100)" stroke-width="14"/>
+          <g class="dots" fill="rgba(180,180,180)">
+            <circle cx="626" cy="934" r="10" />
+            <circle cx="575" cy="1102" r="10" />
+            <circle cx="677" cy="1102" r="10" />
+            <circle cx="626" cy="1259" r="10" />
+            <circle cx="575" cy="1456" r="10" />
+            <circle cx="677" cy="1456" r="10" />
+            <circle cx="626" cy="1625" r="10" />
+            <circle cx="626" cy="1720" r="10" />
+          </g>
+          <g class="tuners" fill="rgb(130,130,130)">
+            <circle cx="462" cy="345" r="26" />
+            <circle cx="462" cy="231" r="26" />
+            <circle cx="462" cy="112" r="26" />
+            <circle cx="790" cy="345" r="26" />
+            <circle cx="790" cy="231" r="26" />
+            <circle cx="790" cy="112" r="26" />
+          </g>
+          <path d="M 530 458 H 722 Q 745 414 746 400 L 766 60 Q 769 7 717 7 H 535 Q 487 7 490 60 L 506 400 Q 507 414 530 458 Z" fill="rgb(47,20,20)"/>
+          <path d="M 528 455 H 724" stroke-width="14" stroke="tan" stroke-linecap="round" />
+          <path class="frets" d="M 530 580 H 722 M 530 695 H 722 M 530 791 H 722 M 530 891 H 722 M 530 976 H 722 M 530 1064 H 722 M 530 1145 H 722 M 530 1223 H 722 M 530 1293 H 722 M 530 1364 H 722 M 530 1426 H 722 M 530 1485 H 722 M 530 1545 H 722 M 530 1600 H 722 M 530 1648 H 722 M 530 1696 H 722 M 530 1744 H 722 M 530 1785 H 722 M 530 1825 H 722 M 530 1866 H 722" stroke-width="5" stroke="tan" stroke-linecap="round" />
+        </g>
+        <g class="strings" fill="none" stroke-width="7" stroke="#fff">
+          <path class="string1" d="M 542 2560 Q 542 1507 542 455 L 567 325">
+            <animate class="string" attributeName="d" values="M 542 2560 Q 542 1507 542 455 L 567 325" begin="indefinite" dur="0.5s" repeatCount="none" />
+          </path>
+          <path class="string2" d="M 576 2559 Q 576 1507 576 455 L 567 211">
+            <animate class="string" attributeName="d" values="M 576 2559 Q 576 1507 576 455 L 567 211" begin="indefinite" dur="0.5s" repeatCount="none" />
+          </path>
+          <path class="string3" d="M 610 2557 Q 610 1507 610 455 L 567 92">
+            <animate class="string" attributeName="d" values="M 610 2557 Q 610 1507 610 455 L 567 92" begin="indefinite" dur="0.5s" repeatCount="none" />
+          </path>
+          <path class="string4" d="M 642 2555 Q 642 1507 642 455 L 685 92">
+            <animate class="string" attributeName="d" values="M 642 2555 Q 642 1507 642 455 L 685 92" begin="indefinite" dur="0.5s" repeatCount="none" />
+          </path>
+          <path class="string5" d="M 676 2553 Q 676 1507 676 455 L 685 211">
+            <animate class="string" attributeName="d" values="M 676 2553 Q 676 1507 676 455 L 685 211" begin="indefinite" dur="0.5s" repeatCount="none" />
+          </path>
+          <path class="string6" d="M 710 2550 Q 710 1507 710 455 L 685 325">
+            <animate class="string" attributeName="d" values="M 710 2550 Q 710 1507 710 455 L 685 325" begin="indefinite" dur="0.5s" repeatCount="none" />
+          </path>
+        </g>
+        <g class="stringDots" fill="silver">
+          <g class="topDots">
+            <circle cx="562" cy="325" r="20" />
+            <circle cx="562" cy="211" r="20" />
+            <circle cx="562" cy="92" r="20" />
+            <circle cx="690" cy="325" r="20" />
+            <circle cx="690" cy="211" r="20" />
+            <circle cx="690" cy="92" r="20" />
+          </g>
+          <g class="bottomDots">
+            <circle cx="542" cy="2560" r="12" />
+            <circle cx="576" cy="2559" r="12" />
+            <circle cx="610" cy="2557" r="12" />
+            <circle cx="645" cy="2555" r="12" />
+            <circle cx="678" cy="2553" r="12" />
+            <circle cx="712" cy="2550" r="12" />
+          </g>
+        </g>
+        <rect class="guitarPick" height="100" width="100" fill="rgba(255,255,255,0)" x="0" y="0" />
+        <g fill="rgba(0,0,255,0)">
+        <rect class="strumTrigger" height="2112" width="64" x="508" y="448" />
+        <rect class="strumTrigger" height="2112" width="64" x="546" y="448" />
+        <rect class="strumTrigger" height="2112" width="64" x="578" y="448" />
+        <rect class="strumTrigger" height="2112" width="64" x="610" y="448" />
+        <rect class="strumTrigger" height="2112" width="64" x="646" y="448" />
+        <rect class="strumTrigger" height="2112" width="64" x="678" y="448" />
+      </svg>
+      
+    </div>
+    
+
+    <div id= "about">
+      <div class= "container">
+        <div class= "row">
+          <div class="about-col-1">
+            <img src= "cartoon.png">
+          </div>
+          <div class="about-col-2">
+            <h1 class= "sub-title" >About Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum.</p>
+            <div class= "tab-titles">
+              <p class= "tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class= "tab-links" onclick="opentab('experience')">Experience</p>
+              <p class= "tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web app Development</li>
+                <li><span>App Development</span><br>Building Android/iOS apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web app Development</li>
+                <li><span>App Development</span><br>Building Android/iOS apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web app Development</li>
+                <li><span>App Development</span><br>Building Android/iOS apps</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- START CONTACT SECTION -->
 
-    <section id="contact" class="contact-section">
-      <div class="contact-section-header">
-        <h2>Let's work together...</h2>
+
+    <div class="projects">
+      <h1>Personal Projects</h1>
+      <div class="project__container">
+        <div class="card">
+          <div class="lines"></div>
+          <div class="imgBx">
+            <img src="StockData.png">
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Customer Segmentation</h2>
+              <p>Used dataset preprocessing techniques to develop a dimensionality reduction algorithm 
+                using PCA and Kernel PCA...
+                </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="lines"></div>
+          <div class="imgBx">
+            <img src="customersegmentation.png">
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Stock Data Candlestick Dashboard</h2>
+              <p>Built an updating local dashboard displaying Stock information such as price, volume, 
+                1-year target using Matplotlib...
+                </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="lines"></div>
+          <div class="imgBx">
+            <img src="coding.png">
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Personal Website</h2>
+              <p>This Website right here! Through building my own portfolio website, I have honed my front end development skills...</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="builders">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 439.6">
+        <g>
+          <g id="Deck">
+            <path d="M10.89 412.6l351.5.5q9.14 0 9.14 7.14t-9.14 7.14H10.89q-9.39 0-9.39-7.39t9.39-7.39z" fill="#ececec" fill-opacity=".5" stroke="#b7b7b7" stroke-linecap="square" stroke-width="3" fill-rule="evenodd"/>
+            <circle cx="186.89" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+            <circle cx="98.14" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+            <circle cx="9.39" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+            <circle cx="364.39" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+            <circle cx="275.64" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+          </g>
+          <g id="Deck">
+            <path d="M10.89 412.6l351.5.5q9.14 0 9.14 7.14t-9.14 7.14H10.89q-9.39 0-9.39-7.39t9.39-7.39z" fill="#ececec" fill-opacity=".5" stroke="#b7b7b7" stroke-linecap="square" stroke-width="3" fill-rule="evenodd" transform="translate(710,0)"/>
+            <path d="M10.89 412.6l351.5.5q9.14 0 9.14 7.14t-9.14 7.14H10.89q-9.39 0-9.39-7.39t9.39-7.39z" fill="#ececec" fill-opacity=".5" stroke="#b7b7b7" stroke-linecap="square" stroke-width="3" fill-rule="evenodd" transform="translate(355,0)"/>
+            <circle cx="541.89" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+            <circle cx="453.14" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+            <circle cx="364.39" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+            <circle cx="719.39" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+            <circle cx="630.64" cy="420.1" r="6.5" fill="#fff" fill-opacity=".66" stroke="#878787" stroke-width="2"/>
+          </g>
+          <g id="Crane">
+            <g id="Crane-Boom">
+              <path fill="#7d8075" fill-rule="evenodd" d="M671.59 212.24L606.23 58.03l-9.87 4.2 65.35 154.21 9.88-4.2z"/>
+              <path d="M605.84 44.63l5.92 14-21.5 9.14c-9-2-11.14-6.16-5.92-14z" transform="translate(-4.5 -.4)" fill="#fcdd44" fill-rule="evenodd"/>
+              <circle id="Crane-Hook" cx="585.23" cy="59.41" fill="#7d8075" r="3.79"/>
+              <path fill="#fcdd44" fill-rule="evenodd" d="M740.42 366.46L654.6 163.95l-16.27 6.91 85.82 202.51 16.27-6.91z"/>
+            </g>
+            <g id="Crane-Body">
+              <path d="M653.46 365.12h-49.79c-1.95 0-5.6 0-7.41 7.19q-.59 2.26 0 23.44h57.2z" transform="translate(-4.5 -.4)" fill="#fcdd44" fill-rule="evenodd"/>
+              <path fill="#ffcb4e" d="M644.56 364.73h4.4v18.75h-4.4z"/>
+              <path d="M619.33 380.62h135.84l10.18 14.22h5.15v5.87h-175v-18.27h2.62v12.4h10.56z" transform="translate(-4.5 -.4)" fill="#7d8075" stroke="#696b64" fill-rule="evenodd"/>
+              <path fill="#696b64" fill-rule="evenodd" d="M759.59 400.85l-11.74-15.5h-41.69l-2.59 11.7h-7.22l-2.6-11.7h-22.78l-3.03 11.7h-7.35l-2.94-11.7H617.2l-12.34 15.5h154.73z"/>
+              <ellipse cx="741.36" cy="396.6" rx="10.06" ry="10" fill="#7d8075"/>
+              <ellipse cx="741.36" cy="396.6" rx="5.03" ry="5" fill="#dbdbdb"/>
+              <ellipse cx="717.47" cy="396.6" rx="10.06" ry="10" fill="#7d8075"/>
+              <ellipse cx="717.47" cy="396.6" rx="5.03" ry="5" fill="#dbdbdb"/>
+              <ellipse cx="682.27" cy="396.6" rx="10.06" ry="10" fill="#7d8075"/>
+              <ellipse cx="682.27" cy="396.6" rx="5.03" ry="5" fill="#dbdbdb"/>
+              <ellipse cx="647.07" cy="396.6" rx="10.06" ry="10" fill="#7d8075"/>
+              <ellipse cx="647.07" cy="396.6" rx="5.03" ry="5" fill="#dbdbdb"/>
+              <ellipse cx="623.19" cy="396.6" rx="10.06" ry="10" fill="#7d8075"/>
+              <ellipse cx="623.19" cy="396.6" rx="5.03" ry="5" fill="#dbdbdb"/>
+              <path d="M613.86 378.25v-10h-8.6c-4.07 0-5.69 2-5.69 5v5z" transform="translate(-4.5 -.4)" fill="#696b64" fill-rule="evenodd"/>
+              <path fill="#f2f2f2" d="M594.27 381.6h7.54v3.75h-7.54z"/>
+              <path fill="#ffcb4e" d="M703.64 374.73h37.71v5h-37.71z"/>
+              <path fill="#fcdd44" fill-rule="evenodd" d="M752.04 359.73h-12.25v-6.08l-23.73-7.05h-16.82v28.13h52.8v-15z"/>
+              <path fill="#ffcb4e" d="M739.47 363.48h8.8v8.13h-8.8z"/>
+              <path fill="#ffcb4e" d="M707.41 365.98h8.8v3.75h-8.8z"/>
+              <path fill="#ffcb4e" d="M712.44 349.1h3.77v11.88h-3.77z"/>
+              <path fill="#696b64" d="M699.24 349.1h13.2v11.88h-13.2z"/>
+              <path fill="#7d8075" d="M699.24 350.98h4.4v10h-4.4z"/>
+              <path d="M750.89 361.07V343.6c0-4.4-7.57-9.29-10.36-4.85q-6.39 10.19-15.41 22.32z" transform="translate(-4.5 -.4)" fill="#ffcb4e" fill-rule="evenodd"/>
+            </g>
+            <g id="Crane-Winch">
+              <path id="Upper-Cable-1" fill="#c5c5c5" d="M593.5 61.6h3v49h-3z"/>
+              <path id="Upper-Cable-2" fill="#c5c5c5" d="M580.5 61.6h3v49h-3z"/>
+              <path id="Lower-Cable" fill="#c5c5c5" d="M587.5 118.6h3v95h-3z"/>
+              <g id="Cable-Hook" fill="#c5c5c5" fill-rule="evenodd">
+                <path id="Lower-Cable-2" data-name="Lower-Cable" d="M590.37 212.87l-2.74 1.58 12.63 21.88 2.74-1.58-12.63-21.88z"/>
+                <path id="Lower-Cable-3" data-name="Lower-Cable" d="M587.63 212.87l2.74 1.58-12.63 21.88-2.74-1.58 12.63-21.88z"/>
+              </g>
+              <path id="Winch" fill="#fcdd44" fill-rule="evenodd" d="M599.5 108.6h-22v5.79l4.53 4.21h11.65l5.82-4.21v-5.79z"/>
+            </g>
+          </g>
+          <g id="Final-Letters" fill="transparent">
+            <path id="final_A" d="M50.72 363L70 413H57.84l-3.07-8.47H33.31L30.16 413H18l19.36-50zM44 373.64l-7.81 21.52h15.65z" transform="translate(-4.5 -.4)"/>
+            <path id="final_w" d="M86.84 412.6l7.7-24.52 7.69 24.52h10.18l11.09-36h-9.96l-6.78 24.23-8-24.23h-8.52l-8 24.23-6.78-24.23H65.5l11.09 36h10.25z"/>
+            <path id="final_e1" d="M150.8 376c10.83 0 18.2 8.09 18.2 19.94V398h-27c.6 4.57 4.29 8.39 10.46 8.39 3.08 0 7.37-1.35 9.7-3.6l4.21 6.15c-3.61 3.3-9.33 5-15 5-11.05 0-19.4-7.42-19.4-19C132 384.47 139.75 376 150.8 376zm0 7.57c-5.94 0-8.5 4.42-9 8h17.9c-.18-3.43-2.58-8-8.9-8z" transform="translate(-4.5 -.4)"/>
+            <path id="final_s" d="M191.26 414c10.09 0 15.74-5 15.74-11.62 0-9.07-8.36-10.79-14.61-12-4.06-.82-6.92-1.42-6.92-3.52s2.25-3.6 5.72-3.6a15.38 15.38 0 0110.77 4.2l3.84-6.46a23.31 23.31 0 00-14.69-5c-9.56 0-14.91 5.32-14.91 11.39 0 8.7 8.06 10.27 14.31 11.47 4 .75 7.3 1.42 7.3 3.9 0 2.25-1.95 3.89-6.09 3.89a20.91 20.91 0 01-12.58-4.94l-4.14 6.67c3.84 3.52 9.94 5.62 16.26 5.62z" transform="translate(-4.5 -.4)"/>
+            <path id="final_o" d="M233 376c11.9 0 19 8.69 19 19s-7.14 19-19 19-19-8.69-19-19 7.14-19 19-19zm0 8.47c-5.87 0-9.14 4.87-9.14 10.49s3.27 10.57 9.14 10.57 9.22-4.87 9.22-10.57-3.38-10.49-9.22-10.49z" transform="translate(-4.5 -.4)"/>
+            <path id="final_m" d="M270.61 413v-24.29a9.82 9.82 0 017.56-4.26c3.94 0 5.45 2.39 5.45 5.75V413h9.68v-24.37a9.74 9.74 0 017.57-4.18c3.93 0 5.45 2.39 5.45 5.75V413H316v-26.09c0-7.4-4-10.91-10.74-10.91a15.56 15.56 0 00-12.56 6.58c-1.36-4.11-4.77-6.58-10.14-6.58-5.6 0-10.44 3.44-11.95 5.61v-4.71H261V413z" transform="translate(-4.5 -.4)"/>
+            <path id="final_e2" d="M342.8 376c10.83 0 18.2 8.09 18.2 19.94V398h-27c.6 4.57 4.29 8.39 10.46 8.39 3.08 0 7.37-1.35 9.7-3.6l4.21 6.15c-3.61 3.3-9.33 5-15 5-11 0-19.4-7.42-19.4-19C324 384.47 331.75 376 342.8 376zm0 7.57c-5.94 0-8.5 4.42-8.95 8h17.9c-.23-3.43-2.63-8-8.95-8z" transform="translate(-4.5 -.4)"/>
+          </g>
+          <g id="Helicopter">
+            <path id="Blades" d="M758.12 22.34a1.38 1.38 0 011 .4 1.36 1.36 0 01.41 1 1.5 1.5 0 01-1.45 1.5l-46.64 1.49-47.44-1.5a1.5 1.5 0 01-1-.46 1.54 1.54 0 01-.42-1.1 1.35 1.35 0 01.44-1 1.4 1.4 0 011-.37L711 23.83z" transform="translate(-4.5 -.4)" fill="#7d8075" stroke="#696b64" fill-rule="evenodd"/>
+            <path id="Lower-Cable-4" data-name="Lower-Cable" fill="#c5c5c5" d="M697.5 60.6h2v30h-2z"/>
+            <g id="Cable-Hook-2" data-name="Cable-Hook" fill="#c5c5c5" fill-rule="evenodd">
+              <path id="Lower-Cable-5" data-name="Lower-Cable" d="M699.25 89.76l-1.5.92 3.96 12.76 1.51-.92-3.97-12.76z"/>
+              <path id="Lower-Cable-6" data-name="Lower-Cable" d="M697.75 89.76l1.5.92-3.96 12.76-1.51-.92 3.97-12.76z"/>
+            </g>
+            <path fill="silver" d="M706.5 26.6h1v7h-1z"/>
+            <path fill="silver" d="M703.5 26.6h1v7h-1z"/>
+            <path fill="silver" d="M709.5 26.6h1v7h-1z"/>
+            <path fill="silver" d="M715.5 65.6h1v4h-1z"/>
+            <path fill="silver" d="M680.5 65.6h1v4h-1z"/>
+            <path d="M729.06 32h-32a7 7 0 00-6.56 4.57l-.91 2.43a5 5 0 004.87 6.67l34.6-1.52a6.22 6.22 0 005.94-6.21 5.94 5.94 0 00-5.94-5.94z" transform="translate(-4.5 -.4)" fill="#fcdd44" fill-rule="evenodd"/>
+            <path fill="#ffcb4e" fill-rule="evenodd" d="M763.83 37.6H683.5v12h52.79l30.21-3.67-2.67-8.33z"/>
+            <path d="M782.85 23.39q-3.39-1.47-7.93 7.9l8.16 3.31q3.17-9.73-.23-11.21z" transform="translate(-4.5 -.4)" fill="#ffcb4e" fill-rule="evenodd"/>
+            <path d="M773 28.6a10.25 10.25 0 00-7.41 3.21 11.36 11.36 0 000 15.58 10.16 10.16 0 0014.82 0 11.36 11.36 0 000-15.58A10.25 10.25 0 00773 28.6zm0 7a3.78 3.78 0 012.75 1.19 4.06 4.06 0 010 5.62 3.77 3.77 0 01-5.5 0 4.06 4.06 0 010-5.62A3.78 3.78 0 01773 35.6z" fill="#7d8075" stroke="#696b64" stroke-width="2" fill-rule="evenodd"/>
+            <path d="M740 49h-58.68a8.31 8.31 0 00-8.32 8.32v.18a8.51 8.51 0 008.5 8.5h40.42a11.49 11.49 0 009.35-4.81z" transform="translate(-4.5 -.4)" fill="#fcdd44" fill-rule="evenodd"/>
+            <path d="M728 56h-16a5 5 0 00-5 5 5 5 0 005 5h16a5 5 0 005-5 5 5 0 00-5-5z" transform="translate(-4.5 -.4)" fill="#ffcb4e" fill-rule="evenodd"/>
+            <path d="M682 56h-1a4 4 0 00-4 4 4 4 0 004 4h1a4 4 0 004-4 4 4 0 00-4-4z" transform="translate(-4.5 -.4)" fill="#ffcb4e" fill-rule="evenodd"/>
+            <circle cx="716" cy="71.1" r="2" fill="#7d8075" stroke="#696b64"/>
+            <circle cx="681" cy="71.1" r="2" fill="#7d8075" stroke="#696b64"/>
+            <path d="M681.16 50h13.3q8-3.8 9.54-12h-15.41q-8.7 3.71-7.43 12z" transform="translate(-4.5 -.4)" fill="#7d8075" stroke="#696b64" fill-rule="evenodd"/>
+          </g>
+          <path id="A" d="M399.58 411.61l-53.58 1 4.16-11.43h9l7.35-20.18-6.88-5.85 4.16-11.43 40.36 35.3zm-7.72-9.92L374.32 387 369 401.67z" transform="translate(-4.5 -.4)" fill="transparent"/>
+          <path id="w" fill="transparent" d="M690.85 138.6l7.69-24.52 7.69 24.52h10.18l11.09-36h-9.96l-6.78 24.23-8-24.23h-8.52l-8 24.23-6.78-24.23h-9.96l11.09 36h10.26z"/>
+          <path id="s" d="M593.26 268c10.09 0 15.74-5 15.74-11.62 0-9.07-8.36-10.79-14.61-12-4.06-.82-6.92-1.42-6.92-3.52s2.25-3.6 5.72-3.6a15.38 15.38 0 0110.77 4.2l3.84-6.46a23.31 23.31 0 00-14.69-5c-9.56 0-14.91 5.32-14.91 11.39 0 8.7 8.06 10.27 14.31 11.47 4 .75 7.3 1.42 7.3 3.9 0 2.25-1.95 3.89-6.09 3.89a20.91 20.91 0 01-12.58-4.94l-4.14 6.67c3.84 3.52 9.94 5.62 16.26 5.62z" transform="translate(-4.5 -.4)" fill="transparent"/>
+          <path id="o" d="M1025 375c11.9 0 19 8.69 19 19s-7.14 19-19 19-19-8.69-19-19 7.14-19 19-19zm0 8.47c-5.87 0-9.14 4.87-9.14 10.49s3.27 10.57 9.14 10.57 9.22-4.87 9.22-10.57-3.38-10.49-9.22-10.49z" transform="translate(-4.5 -.4)" fill="transparent"/>
+          <path id="e2" d="M961.8 376c10.83 0 18.2 8.09 18.2 19.94V398h-27c.6 4.57 4.29 8.39 10.46 8.39 3.08 0 7.37-1.35 9.7-3.6l4.21 6.15c-3.61 3.3-9.33 5-15 5-11 0-19.4-7.42-19.4-19C943 384.47 950.75 376 961.8 376zm0 7.57c-5.94 0-8.5 4.42-8.95 8h17.9c-.23-3.43-2.63-8-8.95-8z" transform="translate(-4.5 -.4)" fill="transparent"/>
+          <path id="e1" d="M816.8 376c10.83 0 18.2 8.09 18.2 19.94V398h-27c.6 4.57 4.29 8.39 10.46 8.39 3.08 0 7.37-1.35 9.7-3.6l4.21 6.15c-3.61 3.3-9.33 5-15 5-11 0-19.4-7.42-19.4-19C798 384.47 805.75 376 816.8 376zm0 7.57c-5.94 0-8.5 4.42-8.95 8h17.9c-.23-3.43-2.63-8-8.95-8z" transform="translate(-4.5 -.4)" fill="transparent"/>
+          <path id="Clip-Path" fill="none" d="M1113.5 439.6H782.45V331.06L1113.5 0v439.6z"/>
+          <path id="m" d="M870.61 414v-24.29a9.82 9.82 0 017.56-4.26c3.94 0 5.45 2.39 5.45 5.75V414h9.68v-24.37a9.74 9.74 0 017.57-4.18c3.93 0 5.45 2.39 5.45 5.75V414H916v-26.09c0-7.4-4-10.91-10.74-10.91a15.56 15.56 0 00-12.56 6.58c-1.36-4.11-4.77-6.58-10.14-6.58-5.6 0-10.44 3.44-11.95 5.61v-4.71H861V414z" transform="translate(-4.5 -.4)" fill="transparent"/>
+          <g id="Dumper">
+            <g id="Dumper-Cab">
+              <path fill="#7d8075" d="M495.58 366.94h11.03v11h-11.03z"/>
+              <path fill="#7d8075" d="M449.98 352.27h37.51v25.67h-37.51z"/>
+              <path fill="#696b64" d="M449.98 354.47h25.74v21.27h-25.74z"/>
+              <path fill="#7d8075" d="M498.52 360.34h5.15v8.07h-5.15z"/>
+              <path fill="#fcdd44" d="M439.68 375.74h72.82v15.4h-72.82z"/>
+              <path fill="#fcdd44" d="M434.53 369.87h15.45v21.27h-15.45z"/>
+              <path fill="#fcdd44" d="M423.5 388.2h21.33v15.4H423.5z"/>
+              <path fill="#fcdd44" d="M444.83 348.6h47.07v5.87h-47.07z"/>
+            </g>
+            <g id="Dumper-Base">
+              <path d="M511.73 414v-.09c6.89-.72 13.27-5.7 13.27-16.41s-6.38-15.69-13.27-16.41V381h-58.25c-7.52 0-15 4.88-15 16.5s7.52 16.5 15 16.5h58.25z" transform="translate(-4.5 -.4)" fill="#7d8075" fill-rule="evenodd"/>
+              <path d="M505.09 409.5v-.06c5.74-.51 11.06-4 11.06-11.56s-5.32-11.06-11.06-11.57v-.06h-47.92c-6 .26-11.8 3.74-11.8 11.61s5.79 11.34 11.8 11.6z" transform="translate(-4.5 -.4)" fill="#696b64" fill-rule="evenodd"/>
+              <ellipse cx="502.07" cy="397.1" rx="11.06" ry="11.25" fill="#fcdd44"/>
+              <ellipse cx="502.07" cy="397.1" rx="5.9" ry="6" fill="#ffcb4e"/>
+              <ellipse cx="484.37" cy="401.6" rx="6.64" ry="6.75" fill="#fcdd44"/>
+              <ellipse cx="484.37" cy="401.6" rx="3.69" ry="3.75" fill="#ffcb4e"/>
+              <ellipse cx="469.63" cy="401.6" rx="6.64" ry="6.75" fill="#fcdd44"/>
+              <ellipse cx="469.63" cy="401.6" rx="3.69" ry="3.75" fill="#ffcb4e"/>
+              <ellipse cx="451.93" cy="397.1" rx="11.06" ry="11.25" fill="#fcdd44"/>
+              <ellipse cx="451.93" cy="397.1" rx="5.9" ry="6" fill="#ffcb4e"/>
+            </g>
+            <g id="Dumper-Bucket" fill-rule="evenodd">
+              <path d="M441.05 367.4L417.69 396a4 4 0 00.56 5.67A4.12 4.12 0 00424 401l23.36-28.55a4 4 0 00-.57-5.67 4.1 4.1 0 00-5.74.62z" transform="translate(-4.5 -.4)" fill="#696b64"/>
+              <path d="M414.36 414H398q14.91-37.5 16.36-37.5c9.37 0 17.81 8.39 17.81 18.75S424.2 414 414.36 414z" transform="translate(-4.5 -.4)" fill="#7d8075"/>
+            </g>
+          </g>
+        </g>
+        </svg>
+      </div>
+    </div>
+    
+    
+    <div class="endpage">
+      <h1>Lets Connect.</h1>
+      <div class="thecoffee">
+        <div class="cup">
+          <div class="coffee"></div>
+        </div>
+        <div class="smoke"></div>
+      </div>
+      <p class="txt">Website built<br><small>by <a href="">&copyJayden Lee</a></small></p>
+      
       <div class="contact-links">
         <a
           href="https://www.linkedin.com/in/jayden-lee-968b25241"
@@ -186,32 +477,17 @@
         >
         <a href="mailto:jayden04lee@gmail.com" class="btn contact-details" rel="noreferrer"><i class="fas fa-at"></i> Email</a
         >
-        <a href="tel:408-466-7522" class="btn contact-details"
-          ><i class="fas fa-mobile-alt"></i> Text me</a
-        >
+        <a href="sms://+14084667522" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Text</a>
+        
       </div>
-    </section>
-
-    <!-- END CONTACT SECTION -->
-
-    <!-- START FOOTER SECTION -->
-
-    <footer>
-      <p>
-
-      </p>
-      <p>
-        &copy; 
-        Website built by Jayden Lee, still under construction...
-      </p>
-    </footer>
-
-    <!-- END FOOTER SECTION -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
-
-    
+    </div>
   
 
-    <script src="app.js"></script>
+    <script src="main.js"></script>
+    <script src="guitar.js"></script>
+    <script src="about.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/MotionPathPlugin.min.js'></script><script  src="./construction.js"></script>
+    
   </body>
 </html>

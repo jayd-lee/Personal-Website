@@ -1,0 +1,24 @@
+
+
+.guitarSVG{
+	position: absolute;
+	top: 71%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	height:100%;
+    
+}
+.guitarSVG{
+	z-index:2;
+    overflow:hidden;
+}
+.guitar {
+	position: absolute;
+	top: 71%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	height: 600px;
+	min-width: 240px;
+	user-select: none;
+}
+
