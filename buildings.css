@@ -1,45 +1,44 @@
 
+.precontainer{
+  overflow: hidden;
+}
+
   .scenewrap{
-    display:block;
     position:relative;
     width:100vw;
     height:100vh;
     overflow:hidden;
-    
   }
   
   .scene{
     display:block;
     position:absolute;
     width:100%;
-    height:620px;
+    height:75.61%;
     left:0px;
     bottom:0px;
-    min-width:2000px;
     background-image:url('https://puu.sh/qnenY/1644135b9c.svg');
-    background-size:contain;
+    background-size:cover;
     background-repeat:no-repeat;
-  
-    
   }
   
+ 
   #bigcrane{
-    max-width:500px;
+    width:34.72%;
     position:absolute;
     left:10px;
     top:-23%;
-
   }
   
   #greentruck{
-    max-width:300px;
-    margin-top:260px;
+    width:20.83%;
+    margin-top: 18.05%;
   }
   
   #Mixer{
-    max-width:160px;
+    width:11.11%;
     position:absolute;
-    left:590px;
-    top:317px;
+    left:40.97%;
+    top:38.66vh;
     transform: scaleX(-1);
   }

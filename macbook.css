@@ -1,11 +1,11 @@
 .animation-wrapper {
-    width: 400px;
-    height: 375px;
+    width: 27.778vw;
+    height: 45.73vh;
     position: absolute;
     perspective: 600px;
     overflow: hidden;
-    left: 32%;
-    top: 25%;
+    left: 10%;
+    top: 27%;
 }
 .animation-inner {
     position: relative;

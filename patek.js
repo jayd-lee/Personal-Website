@@ -13,7 +13,7 @@ function setTime() {
       return v * 360 / 12 + 30 * ct(d.getMinutes()) / 360; // 1h = 30 deg
     };
   
-    document.getElementsByClassName('sec-needle')[0].style.transform = 'rotateZ(' + ct(d.getSeconds()) + 'deg)';
+    document.getElementsByClassName('sec')[0].style.transform = 'rotateZ(' + ct(d.getSeconds()) + 'deg)';
     document.getElementsByClassName('min')[0].style.transform = 'rotateZ(' + ctm(d.getMinutes()) + 'deg)';
     document.getElementsByClassName('hr')[0].style.transform = 'rotateZ(' + cth(d.getHours()) + 'deg)';
   }

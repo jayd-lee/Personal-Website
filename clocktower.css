@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+.clock__tower :after, .clock__tower :before {
+	 content: '';
+	 position: absolute;
+}
+
+.clock__tower{
+  position:absolute;
+    height: 97vh;
+    width: 100%;
+    z-index: -1;
+    left: 40%;
+    bottom: 40%;
+    transform: scale(0.8);
+}
+
+
+ .clock, .clock-tower, .top-middle-tower, .top-tower {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box !important;
+}
+
+ .bottom-tower {
+	 position: absolute;
+	 bottom: -1.22%;
+	 left: 34.1%;
+	 width: 10.41%;
+	 height: 18.29%;
+	 border:2px solid #6c5534;
+	 background-color: #edc09c;
+}
+ .bottom-tower .vl {
+	 position: absolute;
+	 width: 6.945%;
+	 height: 18.29vh;
+	 background-color: #6c5534;
+	 box-shadow: 3px 0 #331a00;
+}
+ .bottom-tower .vl.one-fourth {
+	 left: 15%;
+}
+ .bottom-tower .vl.two-fourth {
+	 left: 30%;
+}
+ .bottom-tower .vl.three-fourth {
+	 left: 60%;
+}
+ .bottom-tower .vl.fourth-fourth {
+	 left: 75%;
+}
+ .bottom-tower .vl.middle {
+	 left: 45%;
+}
+ .clock-tower {
+	 position: absolute;
+	 top: 64.5%;
+	 left: 33.5%;
+	 width: 11.8vw;
+	 height: 18.29vh;
+	 background-color: #edc09c;
+	 border: 4px solid #6c5534;
+}
+ .clock-tower .clock-container {
+	 margin: 1.22vh 1.38vw;
+	 width: 8.33vw;
+	 height: 14.63vh;
+	 background-color: #6c5534;
+	 z-index: 1;
+}
+ .clock-tower .clock-container .clock {
+	 position: absolute;
+	 margin: 5px;
+	 width: 7.638vw;
+	 height: 13.4vh;
+	 border-radius: 50%;
+	 border: 6px solid #edc09c;
+	 background-color: white;
+}
+ .clock-tower .clock-container .clock:before {
+	 top: -1x;
+	 left: -1px;
+	 width: 6.944vw;
+	 height: 12.195vh;
+	 border-radius: 50%;
+	 border: 0.347vw solid #6c5534;
+	 background-color: white;
+}
+ .clock-tower .clock-container .clock:after {
+	 left: 3.125vw;
+	 top: 5.488vh;
+	 width: 0.694vw;
+	 height: 1.22vh;
+	 background-color: black;
+	 border-radius: 50%;
+}
+ .pointer {
+	 position: absolute;
+	 transform-origin: bottom;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 width: 0.347vw;
+	 margin: 0.61vh auto;
+	 background-color: black;
+}
+ .pointer:before {
+	 top: -0.138vh;
+	 width: 0.347vw;
+	 height: 0.61vh;
+	 background-color: black;
+	 border-radius: 50%;
+	 border-top-left-radius: 0;
+	 transform: rotate(45deg);
+}
+ .pointer.hours {
+	 height: 4.878vh;
+	 margin-top: 0.9756vh;
+	 animation: rotate-anim 60s infinite linear;
+}
+ .pointer.minutes {
+	 margin-top: 0.61vh;
+	 height: 5.488vh;
+	 animation: rotate-anim 30s infinite linear;
+}
+ .top-middle-tower {
+	 position: absolute;
+	 top: 58.5%;
+	 left: 34.2%;
+	 width: 10.41vw;
+	 height: 6.097vh;
+	 background-color: #edc09c;
+	 border: 2px solid #6c5534;
+}
+ .top-middle-tower:before {
+	 top: -8.536vh;
+	 left: -0.138vw;
+	 -webkit-box-sizing: content-box;
+	 -moz-box-sizing: content-box;
+	 box-sizing: content-box;
+	 width: 6.944vw;
+	 height: 0;
+	 border: 25px solid rgba(0, 0, 0, 0);
+	 border-top: 0 solid;
+	 border-bottom: 8.537vh solid #6c5534;
+}
+ .window {
+	 position: absolute;
+	 top: 10%;
+	 width: 15px;
+	 height: 35px;
+	 border-radius: 50% / 40px 40px 0 0;
+	 background-color: #6c5534;
+}
+ .top-middle-tower .window {
+	 top: 10%;
+	 width: 15px;
+	 height: 35px;
+}
+ .top-middle-tower .window:nth-of-type(1) {
+	 left: 5%;
+}
+ .top-middle-tower .window:nth-of-type(2) {
+	 left: 18%;
+}
+ .top-middle-tower .window:nth-of-type(3) {
+	 left: 31%;
+}
+ .top-middle-tower .window:nth-of-type(4) {
+	 left: 44%;
+}
+ .top-middle-tower .window:nth-of-type(5) {
+	 left: 57%;
+}
+ .top-middle-tower .window:nth-of-type(6) {
+	 left: 70%;
+}
+ .top-middle-tower .window:nth-of-type(7) {
+	 left: 83%;
+}
+ .top-tower {
+	 position: absolute;
+	 top: 44.2%;
+	 left: 35.9%;
+	 width: 6.94vw;
+	 height: 6.0975vh;
+	 background-color: #edc09c;
+	 border: 2px solid #6c5534;
+	 border-top: 5px solid #6c5534;
+	 border-bottom: 5px solid #6c5534;
+}
+ .top-tower:before {
+	 left: -0.138vw;
+	 top: -12.805vh;
+	 border: 6.098vh solid transparent;
+	 border-bottom: 6.098vh solid #6c5534;
+}
+ .top-tower .window {
+	 margin: 4px;
+	 position: absolute;
+	 top: 25%;
+	 width: 10px;
+	 height: 30px;
+}
+ .window:nth-of-type(1) {
+	 left: 10%;
+}
+ .window:nth-of-type(2) {
+	 left: 25%;
+}
+ .window:nth-of-type(3) {
+	 left: 40%;
+}
+ .window:nth-of-type(4) {
+	 left: 55%;
+}
+ .window:nth-of-type(5) {
+	 left: 70%;
+}
+ @keyframes rotate-anim {
+	 from {
+		 transform: rotate(0deg);
+	}
+	 to {
+		 transform: rotate(360deg);
+	}
+}
+ .clock-tower .clock-container .clock span {
+	 position: absolute;
+	 font-size: 0.7rem;
+	 z-index: 2;
+	 color: black;
+	 font-weight: 600;
+	 font-family: 'Old Standard TT', serif;
+}
+ .clock-tower .clock-container .clock .xii {
+	 top: 1.2195vh;
+	 left: 2.778vw;
+}
+ .clock-tower .clock-container .clock .vi {
+	 bottom: 0.61vh;
+	 left: 2.95vw;
+}
+ .clock-tower .clock-container .clock .ix {
+	 top: 5.488vh;
+	 left: 0.694vw;
+}
+ .clock-tower .clock-container .clock .iii {
+	 top: 5.488vh;
+	 right: 0.694vw;
+}
+ 

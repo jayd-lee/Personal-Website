@@ -33,6 +33,6 @@ var tl4 = new TimelineMax({
 tl4.fromTo(".rope", 8, {delay:2, scaleY:1, repeat:0, transformOrigin:"50% 0%"}, { scaleY:9, transformOrigin:"50% 0%", delay:2, ease: Sine.easeInOut, repeatDelay:1})
 .to(".rope", 2.3, {scaleY:0,delay:2, x:0, ease:Sine.easeInOut, yoyo:true, repeat:-1, repeatDelay:4})
 
-TweenMax.fromTo("#Mixer", 12, {delay:3, x:710, repeat:0, transformOrigin:"50% 50%", repeat:-1, yoyo:true}, {x:0, transformOrigin:"50% 50%", delay:0, ease: Sine.easeInOut, repeat:-1, yoyo:true, delay:2, repeatDelay:9});
+TweenMax.fromTo("#Mixer", 12, {delay:3, x:750, repeat:0, transformOrigin:"50% 50%", repeat:-1, yoyo:true}, {x:0, transformOrigin:"50% 50%", delay:0, ease: Sine.easeInOut, repeat:-1, yoyo:true, delay:2, repeatDelay:9});
 
 TweenMax.fromTo("#Bulldozer", 0.05, {delay:0, x:0, y:0, repeat:0, transformOrigin:"50% 50%", repeat:-1, yoyo:true}, {x:-0.2, y:0.4, rotate:1, transformOrigin:"50% 50%", delay:0, ease: Elastic.easeInOut, repeat:-1, yoyo:true});

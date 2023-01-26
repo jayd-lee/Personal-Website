@@ -5,17 +5,21 @@
   
   .hero-wrapper{
     width: 100%;
-    height: auto;
-    position: relative;
+    height: 98.5vh;
+    position: absolute;
+    background-size: cover;
     overflow-x:hidden;
     background-color: rgb(37, 10, 37);
+    
   }
   
   .hero-01 {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     width: 100%;
-    height: auto;
+    height:98.5vh;
+    height:98.5vh;
+    background-size: cover;
   }
   
   .hero-02 {
@@ -25,7 +29,7 @@
     bottom: 11%;
     z-index: 2;
     width: 100%;
-    height: auto;
+    height:auto;
   }
   
   .hero-03 {
@@ -36,7 +40,7 @@
     bottom: 0%;
     z-index: 3;
     width: 100%;
-    height: auto;
+    height:98.5vh;
   }
   
   .hero-04 {
@@ -47,7 +51,7 @@
     bottom: 0%;
     z-index: 4;
     width: 100%;
-    height: auto;
+    height:98.5vh;
   }
   
   .hero-05 {
@@ -58,7 +62,7 @@
     bottom: 0%;
     z-index: 5;
     width: 100%;
-    height: auto;
+    height:98.5vh;
   }
   
   .hero-06 {
@@ -69,7 +73,7 @@
     bottom: 0%;
     z-index: 6;
     width: 100%;
-    height: auto;
+    height:98.5vh;
   }
   
 
@@ -81,7 +85,7 @@
     bottom: 0%;
     z-index: 7;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     -webkit-transform:translate3d(-2%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -moz-transform:translate3d(-2%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -ms-transform:translate3d(-2%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -96,7 +100,7 @@
     bottom: 0%;
     z-index: 8;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     -webkit-transform:translate3d(-4%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -moz-transform:translate3d(-4%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -ms-transform:translate3d(-4%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -111,7 +115,7 @@
     bottom: 0%;
     z-index: 9;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     -webkit-transform:translate3d(-6%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -moz-transform:translate3d(-6%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -ms-transform:translate3d(-6%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -126,7 +130,7 @@
     bottom: 0%;
     z-index: 10;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     -webkit-transform:translate3d(-8%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -moz-transform:translate3d(-8%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -ms-transform:translate3d(-8%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -141,7 +145,7 @@
     right: 0%;
     z-index: 11;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     -webkit-transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -moz-transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -ms-transform:translate3d(-10%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -155,7 +159,7 @@
     right: 0%;
     z-index: 12;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     -webkit-transform:translate3d(-12%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -moz-transform:translate3d(-12%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -ms-transform:translate3d(-12%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -170,7 +174,7 @@
     bottom: 0%;
     z-index: 13;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     -webkit-transform:translate3d(-14%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -moz-transform:translate3d(-14%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -ms-transform:translate3d(-14%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -185,7 +189,7 @@
     bottom: 0%;
     z-index: 14;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     -webkit-transform:translate3d(-16%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -moz-transform:translate3d(-16%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
     -ms-transform:translate3d(-16%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
@@ -200,7 +204,7 @@
     bottom: 0%;
     z-index: 15;
     width: 100%;
-    height: auto;
+    height:98.5vh;
   }
   
   .hero-08 {
@@ -211,7 +215,7 @@
     bottom: 0%;
     z-index: 16;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     
   }
   .bottomright {
@@ -221,7 +225,7 @@
     bottom: 0%;
     z-index: 16;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     
   }
   
@@ -233,7 +237,7 @@
     bottom: 0%;
     z-index: 17;
     width: 100%;
-    height: auto;
+    height:98.5vh;
   }
   
   .hero-10 {
@@ -244,7 +248,7 @@
     bottom: 0%;
     z-index: 18;
     width: 100%;
-    height: auto;
+    height:98.5vh;
   
   }
   
@@ -256,7 +260,7 @@
     bottom: 0%;
     z-index: 19;
     width: 100%;
-    height: auto;
+    height:98.5vh;
     -webkit-transform: translate(0px, 2px);
     -ms-transform: translate(0px, 2px);
     transform: translate(0px, 2px);

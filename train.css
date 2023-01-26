@@ -6,7 +6,6 @@
     box-sizing: inherit;
   }
   
-  
   .train__container {
     box-sizing: border-box;
     position: absolute;
@@ -14,17 +13,18 @@
     height: 100%;
     background: #595055;
     overflow: hidden;
-    z-index: 2;
+    z-index: 0;
+  
   }
   
   .train__container > p{
     text-align: center;
-    padding:50px;
-    font-size: 40px;
-    color:white;
+    padding: 6.1% 3.47%;
+    font-size: 2.78vw;
+    color:rgb(176, 169, 169);
     font-weight: bold;
-  }
 
+  }
 
   .moon {
     width: 100px;
@@ -190,30 +190,32 @@
   
   .train-container {  
     position: absolute;
-    bottom: -40px;
+    bottom: -4.878%;
+    z-index: 6;
+    background-size:cover;
   }
   
   .train {
-    width: 1450px;  
+    width: 100.7vw;  
     animation: move 13s -1.5s linear infinite forwards;
   }
   
   @keyframes move {
-    0% {transform: translateX(1500px);}
-    100% { transform: translateX(-1450px); }
+    0% {transform: translateX(104.17%);}
+    100% { transform: translateX(-100.7%); }
   }
   
   .train-car {
     display: inline-block;
     vertical-align: top;
-    height: 70px;
-    width: 240px;
+    height: 8.54vh;
+    width: 16.67%;
     border: 1px solid #71656a;
     border-top: 2px solid #978a8e;    
     background: #50464b;
     border-radius: 11px;
-    padding-top: 18px; 
-    padding-left: 18px;
+    padding-top: 2.19vh; 
+    padding-left: 2.19%;
   }
   
   .head-car,
@@ -259,6 +261,10 @@
     font-weight:bold;
     font-size:17px;
   /*   vertical-align: top; */
+  }
+
+  .end-car .windows{
+    opacity: 0;
   }
   
   .head-car-window,
@@ -318,7 +324,7 @@
     position: relative;
     background: #43383e;
     width: 100%;
-    height: 450px;  
+    height: 54.88vh;
   }
   
   .ledge {
@@ -335,30 +341,30 @@
   
   .pillar > div{
     background: #534a4f;
-    height: 386px;
-    border-radius: 200px 200px 0 0; 
+    height: 47.07vh;
+    border-radius: 24.39vh 13.88vw 0 0; 
     display: inline-block;
     background-image: linear-gradient(180deg, #534a4f 78%,rgb(54, 22, 22),rgb(54, 22, 22), rgb(54, 22, 22),rgb(54, 22, 22));
   }
   
   .pillar-left {
-    width: 200px;
-    margin-left: -60px;
-    margin-right: 50px;
+    width: 13.88vw;
+    margin-left: -4.166vw;
+    margin-right: 3.47vw;
   }
   
   .pillar-middle,
   .pillar-right {
-    border-right: 5px solid #968b8e;
+    border-right: 0.609vw solid #968b8e;
   }
   
   .pillar-middle {
-    width: 200px;
-    margin-right: 80px;
+    width: 13.88vw;
+    margin-right: 5.55vw;
   }
   
   .pillar-right {
-    width: 220px;
+    width: 15.277vw;
     border-right-width: 8px;
   }
   
@@ -368,4 +374,18 @@
     background: rgb(54, 22, 22);
     position: absolute;
     z-index: 1;
+  }
+
+
+  .boilerup{
+    width:80%;
+  }
+
+  .purdue{
+    width: 70%;
+    height: 90%;
+  }
+
+  .purduep{
+    width:50%;
   }

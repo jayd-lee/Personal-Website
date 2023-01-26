@@ -17,7 +17,7 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   font-family: "Josefin Sans", sans-serif;
   text-align:center;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 5.5555vw;
   color:#26180f
 }
 
@@ -25,62 +25,62 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   transform: scale(1.3);
 }
 .cup {
-  width:76px;
-  height:76px;
+  width:5.277vw;
+  height:9.27vh;
   background:#dedede;
   border-radius:50%;
   position:absolute;
   left:50%;
-  margin-left:-38px;
-  top:-30px;
+  margin-left:-2.638vw;
+  top:-3.658;
   box-shadow:-4px -1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cup:after{
   content:"";
-  width:66px;
-  height:66px;
+  width:4.583vw;
+  height:8.0487vh;
   position:absolute;
   border-radius:50%;
   background:linear-gradient(-45deg, #cbcbcb, #f2f2f2 );
   left:50%;
-  margin-left:-33px;
-  top:5px;
+  margin-left:-2.291vw;
+  top:0.61vh;
 }
 
 .coffee{
-  width:47px;
-  height:47px;
+  width:3.263vw;
+  height:5.73vh;
   background:#613317;
   /*background-image: linear-gradient(15deg, transparent 0px, transparent 29px, rgba(255,255,255,0.05) 29px, rgba(255,255,255,0.05) 47px);*/
   border-radius:50%;
   position:absolute;
   left:50%;
-  margin-left:-25px;
+  margin-left:-1.736vw;
   z-index:1;
   top:50%;
-  margin-top:-26px;
-  border:3px solid #e9e9e9;
-  box-shadow:-3px 2px 0 rgba(0,0,0,0.1);
+  margin-top:-3.17vh;
+  border:0.27778vw solid #e9e9e9;
+  box-shadow:-0.208vw 0.2439vh 0 rgba(0,0,0,0.1);
   transform:rotate(30deg);
   transition:transform 0.3s;
 }
 
 .coffee:after{ /*assa*/
  content:"";
-  width:15px;
-  height:8px;
+  width:1.041vw;
+  height:0.975vh;
   position:absolute;
-  left:-19px;
-  top:18px;
+  left:-1.319vw;
+  top:2.195vh;
   background:linear-gradient(90deg, #d6d6d6, #aeaeae);
   box-shadow:0px 2px 0 rgba(0,0,0,0.2);
 }
 
 .coffee:before {
   content:"";
-  width:47px;
-  height:47px;
+  width:3.26vw;
+  height:5.73vh;
   background-image: radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 95%), radial-gradient(5% 9%, ellipse, rgba(255,255,255,0.1), transparent 5%), radial-gradient(0% 0%, ellipse, rgba(255,255,255,0.3), transparent 55%);
   background-image: -webkit-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 95%), -webkit-radial-gradient(5% 9%, ellipse, rgba(255,255,255,0.1), transparent 5%), -webkit-radial-gradient(0% 0%, ellipse, rgba(255,255,255,0.3), transparent 55%);
   background-image: -moz-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 95%), -moz-radial-gradient(5% 9%, ellipse, rgba(255,255,255,0.1), transparent 5%), -moz-radial-gradient(0% 0%, ellipse, rgba(255,255,255,0.3), transparent 55%);
@@ -131,13 +131,13 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   justify-content: center;
   text-align: center;
   width: 100%;
-  margin-top: 9rem;
+  margin-top: 17.6829vh;
   flex-wrap: wrap;
 }
 
 .contact-details {
-  font-size: 2.4rem;
-  padding: 10px;
+  font-size: 2.6667vw;
+  padding: 1.219vh;
   transition: transform 0.3s ease-out;
   text-decoration: none;
   color:#613317;
@@ -170,8 +170,8 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   left: 0;
   right: 0;
   margin: auto;
-  width: 300px;
-  height: 300px;
+  width: 20.833vw;
+  height: 36.585vh;
   background: #EFEFEF;
   border-radius: 50%;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
@@ -185,7 +185,6 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   height: 70%;
   background: #EEE;
 }
-
 
 #toast {
   background: wheat;
@@ -240,14 +239,15 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   left:42%;
   transform: scale(1.25);
 }
+
 .mshad1{
   background-color: rgba(0, 61, 77,0.2);
-  height:43px;
-  width: 43px;
+  height:5.244vh;
+  width: 2.986vw;
   border-radius: 50%;
   position: relative;
-  left:245px;
-  bottom:130px;
+  left:17.014vw;
+  bottom:15.854vh;
   transform: scale(1.2) rotate(-30deg);
 
 }
@@ -274,70 +274,70 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
 }
 .mcup1{
   background-color: white;
-  height:43px;
-  width: 43px;
+  height:5.244vh;
+  width: 2.986vw;
   border-radius: 50%;
   position: relative;
-  bottom:43px;
-  right:3px;
+  bottom:5.244vh;
+  right:0.208vw;
 }
 .mcup2{
   background-color:white;
-  height:25px;
-  width: 25px;
+  height:3.04vh;
+  width: 1.76vw;
   transform: rotate(38deg);
   position: relative;
   border-radius: 5px;
-  top:10px;
-  right: 4px;
+  top:1.22vh;
+  right: 0.2778vw;
 }
 .mcup3{
   background-color: white;
-  width:21px;
-  height:14px;
+  width:1.458vw;
+  height:1.707vh;
   position: relative;
   border-bottom-right-radius:21px;
   border-top-right-radius: 21px;
-  left:40px;
-  bottom:9px;
+  left:2.778vw;
+  bottom:1.0975vh;
 }
 .minn1{
   background-color: #e5dacd;
-  height:38px;
-  width: 38px;
+  height:4.634vh;
+  width: 2.638vw;
   border-radius: 50%;
   position: relative;
-  bottom: 36px;
-  left:1.5px;    
+  bottom: 4.39vh;
+  left:0.104vw;    
 }
 .minn2{
   background-color: #e5dacd;
-  height:20px;
-  width: 20px;
+  height:2.439vh;
+  width: 1.388vw;
   transform: rotate(38deg);
   position: relative;
   border-radius: 5px;
-  top:10px;
-  right: 4px;
+  top: 1.219vh;
+  right: 0.2778vw;
 }
 .milk1{
   background-color: white;
-  height:30px;
-  width: 30px;
+  height:3.66vh;
+  width: 2.083vw;
   border-radius: 50%;
   position: relative;
-  bottom: 16px;
-  left:4px;
+  bottom: 1.95vh;
+  left:.2778vw;
 }
 .milk2{
   background-color: white;
-  height:12px;
-  width: 12px;
+  height:1.4634vh;
+  width: 0.8333vw;
   transform: rotate(38deg);
   position: relative;
   border-radius: 3px;
-  top:10px;
-  right: 4px;
+  top:1.22vh;
+  right: .2778vw;
 }
 
 .code {
@@ -345,13 +345,13 @@ url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
   background: transparent;
   overflow: hidden;
   position: absolute;
-  height: 350px;
+  height: 42.68vh;
   bottom:0;
 }
 .svg {
   position: absolute;
-  bottom: -10px;
-  width: 700px;
+  bottom: -1.22vh;
+  width: 48.6vw;
   left: 0;
   right: 0;
   margin: auto;

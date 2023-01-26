@@ -206,8 +206,9 @@ body{
     background-color: black;
     width:100vw;
     height:98.5vh;
-    z-index: -1;
+    z-index: -5;
     overscroll-behavior: none;
+    
   }
   
   .main__container {
@@ -589,9 +590,9 @@ PROJECTS
 .projects > h1{
   position: absolute;
   z-index: 10;
-  font-size: 80px;
+  font-size: 5.555vw;
   font-weight: bold;
-  left:40%;
+  left:36%;
   top: 5%;
   color: rgb(42, 40, 40);
 }
@@ -618,14 +619,14 @@ PROJECTS
   font-family: "Poppins", sans-serif;
   position: absolute;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 5.556vw;
   z-index: 5;
 }
 
 .card{
   position: relative;
-  width: 350px;
-  height: 180px;
+  width: 24.31vw;
+  height: 21.95vh;
   background:  #000;
   transition: 0.5s;
   transform: translateY(-10%);
@@ -633,7 +634,7 @@ PROJECTS
 }
 
 .card:hover{
-  height: 450px;
+  height: 54.878vh;
   opacity:90%;
 }
 
@@ -649,8 +650,8 @@ PROJECTS
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 600px;
-  height: 120px;
+  width: 41.67vw;
+  height: 14.634vh;
   background: linear-gradient(transparent, #f1c40f, #f1c40f, #f1c40f, transparent);
   animation: animate 4s linear infinite;
   filter: brightness(1.3);
@@ -673,7 +674,7 @@ PROJECTS
 .card .lines::after {
   content: '';
   position: absolute;
-  inset:3px;
+  inset:0.2083vw;
   background: #292929;
 }
 
@@ -681,8 +682,8 @@ PROJECTS
   position: absolute;
   top: -60px;
   left: 50%;
-  width: 150px;
-  height: 150px;
+  width: 10.4167vw;
+  height: 18.293vh;
   transform: translateX(-50%);
   background: #000;
   transition: 0.5s;
@@ -694,9 +695,9 @@ PROJECTS
 }
 
 .card:hover .imgBx{
-top: 25px;
-width: 225px;
-height: 225px;
+top: 3.0487vh;
+width: 15.625vw;
+height: 27.439vh;
 }
 
 .card .imgBx::before {
@@ -704,8 +705,8 @@ height: 225px;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 500px;
-  height: 150px;
+  width: 34.72vw;
+  height: 18.293vh;
   background: linear-gradient(transparent, #f1c40f, #f1c40f, #f1c40f, transparent);
   transform: translate(-50%, -50%);
   animation: animate2 6s linear infinite;
@@ -729,14 +730,14 @@ height: 225px;
 .card .imgBx::after {
   content: '';
   position: absolute;
-  inset: 3px;
+  inset: 0.2083vw;
   background: #292929;
 
 }
 
 
 .card .imgBx img{
-  max-width: 100px;
+  width: 8.333vw;
   position: absolute;
   z-index: 1;
 
@@ -745,7 +746,7 @@ height: 225px;
 }
 
 .card:hover .imgBx img{
-  max-width: 150px;
+  width: 13.889vw;
   opacity: 1;
 }
 
@@ -761,11 +762,11 @@ overflow: hidden;
 
 .card .content .details{
 
-  padding: 30px 30px;
+  padding: 3.6585vh 2.0833vw;
   text-align: center;
   width: 100%;
   transition: 0.5s;
-  transform: translateY(145px);
+  transform: translateY(17.683vh);
 }
 
 .card:hover .content .details{
@@ -773,7 +774,7 @@ transform: translateY(0px) ;
 }
 
 .card .content .details h2{
-font-size: 1.5em;
+font-size: 1.6667vw;
 font-weight: 700;
 color: rgb(74, 34, 34);
 line-height: 1.2em;
@@ -784,14 +785,15 @@ filter:brightness(1.75)
 color: #fff;
 opacity: 0;
 transition: 0.5s;
+font-size: 1.111vw;
 }
 
 .card .content .details a{
   display: inline-block;
-  padding: 8px 15px;
+  padding: 0.976vh 1.042vw;
   background: #45f3ff;
   color: #292929;
-  margin-top: 10px;
+  margin-top: 1.22vh;
   font-weight: 500;
   text-decoration: none;
   opacity: 0;
