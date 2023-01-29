@@ -7,9 +7,10 @@
 
 #clickme{
 	width:10%;
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 30%;
+	opacity: 60%;
 }
 
 #navbar{
